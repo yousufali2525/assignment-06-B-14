@@ -29,12 +29,11 @@ const inSaved = isSaved(workout.id);
             src={workout.image || '/workout-card.jpg'}
             alt={workout.name}
             referrerPolicy="no-referrer"
-            onError={(e) => {
-              if (!e.currentTarget.src.endsWith('/workout-card.jpg')) {e.currentTarget.src = '/workout-card.jpg';
-              } 
+            onError={(e) => 
+              {
+              if (!e.currentTarget.src.endsWith('/workout-card.jpg')) {e.currentTarget.src = '/workout-card.jpg';} 
               else {
-                setImgError(true);
-              }
+                setImgError(true);}
             }}
             loading="lazy"
             className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"/>
