@@ -146,6 +146,7 @@ const isCompleted = isPlanTab && 'completed' in item && Boolean(item.completed);
                         removeFromSaved(item.id);
                       }
                     }}
+
                     title="Remove"
                     aria-label={`Remove ${item.name}`}
                     className="p-1.5 rounded-full text-neutral-400 hover:text-white transition-colors">
@@ -153,6 +154,7 @@ const isCompleted = isPlanTab && 'completed' in item && Boolean(item.completed);
                   </button>
                 </div>
               </div>
+              
             );
           })}
         </div>

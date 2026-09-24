@@ -20,9 +20,9 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({ onNavigateHome }) =>
             <span>Return to Workouts</span>
           </button>
           <button
-            onClick={() => window.history.back()}
+            onClick={()=>window.history.back()}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#171c20] hover:bg-[#1e242a] text-neutral-300 font-semibold text-sm px-5 py-3 rounded-xl border border-[#2b353e] transition-colors">
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-4 h-4"/>
             <span>Go Back</span>
           </button>
         </div>
