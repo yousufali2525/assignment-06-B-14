@@ -56,11 +56,11 @@ const [plan, setPlan] = useState<PlanItem[]>(() => {
       }
       const parsed: PlanItem[] = JSON.parse(stored);
       return parsed.map((item) => ({...item,image: item.image || UNIFIED_WORKOUT_IMAGE,}));} 
-catch {
+ catch {
       return [];
-    }
+     }
   });
-const [saved, setSaved] = useState<SavedItem[]>(() => {
+ const [saved, setSaved] = useState<SavedItem[]>(() => {
   try {
 const stored = localStorage.getItem(SAVED_STORAGE_KEY);
   if (!stored) {
@@ -68,7 +68,7 @@ const stored = localStorage.getItem(SAVED_STORAGE_KEY);
     }
 const parsed: SavedItem[] = JSON.parse(stored);
       return parsed.map((item) => ({...item,image: item.image || UNIFIED_WORKOUT_IMAGE,}));} 
-catch {
+ catch {
       return [];
     }
   });
