@@ -103,7 +103,7 @@ const isCompleted = isPlanTab && 'completed' in item && Boolean(item.completed);
                 onError={(e) => {
       if (!e.currentTarget.src.endsWith('/workout-card.jpg')) {e.currentTarget.src = '/workout-card.jpg';}                  
     }}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"/>
+      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"/>
                   </div>                
                   <div className="flex-1 min-w-0">
                     <h3
@@ -129,13 +129,14 @@ const isCompleted = isPlanTab && 'completed' in item && Boolean(item.completed);
                 <div className="flex items-center gap-2 pt-2 md:pt-0 border-t md:border-t-0 border-[#1c2227] justify-end">
                   <button
                     onClick={() => onSelectWorkout(item.id)}
+
                     className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-[#14171b] hover:bg-[#1c2126] text-white border border-[#2b353e] hover:border-neutral-400 transition-colors">View Details</button>
                   {isPlanTab && (
                     <button
                       onClick={() => togglePlanDone(item.id)}
                       className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-colors flex items-center gap-1.5 ${isCompleted? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40': 'bg-[#ccff00] hover:bg-[#d8ff33] text-black font-semibold shadow-sm'}`}>
-                      <Check className="w-3.5 h-3.5 stroke-[2.5]" />
-                      <span>{isCompleted ? 'Done' : 'Mark as Done'}</span>
+                      <Check className="w-3.5 h-3.5 stroke-[2.5]"/>
+                      <span>{isCompleted ? 'Done' : 'Mark as Done'} </span>
                     </button>
                   )}
                   <button
