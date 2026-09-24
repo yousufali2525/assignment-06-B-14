@@ -9,6 +9,7 @@ interface LibrarySectionProps {
   onSelectWorkout: (id: number) => void;
 }
 export const LibrarySection: React.FC<LibrarySectionProps> = ({workouts,loading,error,onSelectWorkout,}) => {
+  
   return (
     <section id="library" className="py-10 sm:py-14 text-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,13 +27,11 @@ export const LibrarySection: React.FC<LibrarySectionProps> = ({workouts,loading,
                 <div className="space-y-2 mt-4">
                   <div className="w-16 h-4 bg-[#1c2227] rounded-full" />
                   <div className="w-3/4 h-5 bg-[#1c2227] rounded" />
-                  <div className="w-1/2 h-3 bg-[#1c2227] rounded" />
-                </div>
+                  <div className="w-1/2 h-3 bg-[#1c2227] rounded" /></div>
                 <div className="pt-3 border-t border-[#1c2227] flex justify-between">
                   <div className="w-12 h-3 bg-[#1c2227] rounded" />
                   <div className="w-12 h-3 bg-[#1c2227] rounded" />
-                  <div className="w-8 h-3 bg-[#1c2227] rounded" />
-                </div>
+                  <div className="w-8 h-3 bg-[#1c2227] rounded" /></div>
               </div>
             ))}
           </div>
