@@ -1,6 +1,6 @@
 import React from'react';
 import logo from'../images/logo.png';
-export const Footer:React.FC = () => {
+export const Footer:React.FC =()=>{
   return (
     <footer className="w-full bg-[#08090a] border-t border-[#191f24] py-10 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
